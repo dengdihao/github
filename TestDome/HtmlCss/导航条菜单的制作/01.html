@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*垂直导航css*/
+        /* *{margin: 0;padding: 0;}
+        ul{list-style: none;width: 100px;}
+        a{display: block;text-decoration: none;height: 30px;line-height: 30px;width: 100px;
+            background: #cccccc;margin-bottom: 1px;text-indent: 18px;}
+        a:hover{background-color: green;color: red;}*/
+        /*横向导航css*/
+        *{margin: 0;padding: 0;}
+        ul{list-style: none; margin-top: 20px;}
+        li{float: left; margin-left: 10px;}
+        a{display: block;text-decoration: none;height: 30px;line-height: 30px;width: 100px;
+            background: #cccccc;margin-bottom: 1px;text-align: center;}
+        on, a:hover{background-color: green;color: red;height: 40px; line-height: 40px; margin-top: -10px;
+        }
+    </style>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><a class="on" href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li>
+            <a href="#">新闻资讯</a>
+            <ul class="ulli" style="display: none;">
+                <li><a>一级</a></li>
+                <li><a>二级</a></li>
+                <li><a>三级</a></li>
+                <li><a>四级</a></li>
+
+            </ul>
+        </li>
+        <li><a href="#">产品展示</a></li>
+        <li><a href="#">售后服务</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+</div>
+</body>
+</html>

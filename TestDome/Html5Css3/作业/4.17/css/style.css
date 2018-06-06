@@ -1,0 +1,40 @@
+*{margin: 0px; padding: 0px;}
+
+/**/
+/*作业一*/
+.wrap{width: 100%;}
+.work1{ background: url(../img/pic.jpg) 0 0 no-repeat;
+    width: 1226px; height: 460px; margin: 0 auto;overflow: hidden; }
+.wleft,.wright{background: #82bbcc; width: 50px; height: 100px;
+    line-height: 100px; text-align: center;font-size: 20px;
+    color: #555555;float: left; display: none;}
+.wleft{margin-top: 180px;}
+.wright{margin-left: 1176px;margin-top: -100px; }
+.clear{clear: both;}
+.work1:hover .wleft,.wright{ display: block;}
+
+/*作业二*/
+.work2{font-size: 14px; background: #f8f3f7;height: 50px;  }
+.work2>.fu{list-style: none;float: right;margin: 15px 20px;}
+.fu>li{float: left;box-sizing:border-box;
+    padding: 0px 10px; border-right: 1px solid #e1ddde;
+    }
+.fu>li>a{text-decoration: none;color: black;}
+.fu>li>a:hover{color: red;}
+.on{background: url(../../HtmlCss/shopOne/img/tel.png) 2px 0 no-repeat; padding-left: 20px !important;}
+.on:hover{background: url(../../HtmlCss/shopOne/img/tel.png) 2px -25px no-repeat;}
+.su{list-style: none;display: none; position: absolute; width:80px;
+    box-sizing: border-box; text-align: center;right: -1px;
+    top:19px;background: white;
+    }
+.sonNav:hover{ background: white;border-top: 1px solid #dddddd;}
+.sonNav:hover .su{display: block;border: 1px solid #dddddd;}
+/*.su>li>a{text-decoration: none; color: black;}
+.su>li>a:hover{color: red;}
+.su>li{ border-bottom: 1px solid #dddddd; height: 35px;
+    box-sizing: border-box;width: 80px;line-height: 35px;}*/
+.sonNav{width: 80px; box-sizing: border-box;position: relative;
+    }
+
+
+

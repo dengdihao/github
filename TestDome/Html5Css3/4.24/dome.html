@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url('叶根友疾风草书.ttf');
+        }
+        div.one{border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+        div.one>div:nth-child(1){
+            background: #dddddd;
+            width: 500px;
+            height: 250px;
+            border-radius:250px 250px 0 0;
+            box-sizing: border-box;
+        }
+        div.one>div:nth-child(2){
+            background: red;
+            width: 500px;
+            height: 250px;
+            border-radius: 0 0 250px 250px;
+            box-sizing: border-box;
+        }
+        div.two>div:nth-child(1){
+            width: 250px;
+            height: 125px;
+            box-sizing: border-box;
+        }
+        div.two>div:nth-child(2){
+
+            width: 250px;
+            height: 125px;
+            box-sizing: border-box;
+            border-radius: 125px 125px 0 0 ;
+            background: red;
+            position: relative;
+        }
+        div.two>div:nth-child(2)>div{
+            width: 20px;
+            height: 20px;
+            background: #dddddd;
+            border-radius: 50%;
+            position: absolute;
+            left: 115px;
+            top: 115px;
+        }
+        div.three>div:nth-child(1){
+            width: 250px;
+            height: 125px;
+            box-sizing: border-box;
+            border-radius:  0 0 125px 125px ;
+            background: #dddddd;
+            margin-left: 250px;
+        }
+        div.three>div:nth-child(1)>div{
+            width: 20px;
+            height: 20px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 365px;
+            top: 240px;
+        }
+
+        div.img{
+            width: 286px;
+            height: 288px;
+            margin: 0 auto;
+            border: 1px solid red;
+            background: url(1.png);
+           border-image-source: url(2.png);
+            border-image-slice: 27;
+            border-image-width: 25px;
+            border-image-outset: 56px;
+            border-image-repeat: round;
+        }
+        div.box{
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            background: red;
+            box-shadow:
+                    0px 0px 22px 14px green inset,
+                    10px 10px 10px 20px black;
+            text-shadow: 20px 20px 10px black;
+        }
+        div.text{
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            font-family: myFont;
+            font-size: 200px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px 30px 40px 20px;
+            border: 1px solid ;
+            box-shadow: 5px 15px 3px 10px yellow inset;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    <div class="two">
+        <div></div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div class="three">
+        <div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+
+<div class="img">
+
+</div>
+
+<div class="box">
+    这有一个文字阴影
+</div>
+<!--<div class="text">
+字体变化
+</div>-->
+
+
+<hr>
+<br>
+<hr>
+<br><hr>
+<br><hr>
+<br><hr>
+<br><hr>
+<br><hr>
+<br><hr>
+<br><hr>
+<br>
+
+<div class="box1"></div>
+
+
+
+
+
+
+</body>
+</html>

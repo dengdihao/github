@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(red,yellow 20%,green 50%);
+            /*background: repeating-linear-gradient(red 10%,yellow 20%);*/
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: repeating-radial-gradient(at 50% 50%,red 10%, yellow 40%,green 50%);
+            transition: all 2s;
+        }
+        .box2:hover{
+            width: 300px;
+            transform: rotateX(90deg);
+
+        }
+
+
+
+        .box3{
+            width: 500px;
+            height: 700px;
+            border: 1px solid red;
+            margin: 0px auto;
+        }
+        li{
+            list-style: none;
+            background: red;
+            display: inline-block;
+            border: 1px solid red;
+            margin: 0 10px;
+            width: 50px;
+            height: 100px;
+
+        }
+        div.box3:hover li{
+            transform: translateY(500px);
+        }
+        div.box3 li:nth-child(1){
+            transition: all 1s ease-in 0.1s;
+        }
+        div.box3 li:nth-child(2){
+            transition: all 1s ease-in 0.2s;
+        }
+        div.box3 li:nth-child(3){
+            transition: all 1s ease-in 0.3s ;
+        }
+        div.box3 li:nth-child(4){
+            transition: all 1s ease-in 0.4s ;
+        }
+        div.box3 li:nth-child(5){
+            transition: all 1s ease-in 0.5s ;
+        }
+        div.box3 li:nth-child(6){
+            transition: all 1s ease-in 0.6s ;
+        }
+
+        .box4{
+            width: 800px;
+            height: 800px;
+            border: 1px solid;
+            margin: 0px auto;
+        }
+        .box4>div{
+            width: 400px;
+            height: 582px;
+            background:url(555.jpg) no-repeat 0 0;
+            margin: 100px auto;
+            transform: rotateX(60deg) rotateZ(-30deg);
+            box-shadow: -10px 10px 10px 3px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transition: all 2s;
+        }
+        .box4>div:hover{
+            transform: none;
+            box-shadow: -100px 100px 50px 20px transparent;
+        }
+
+        .box5{
+            width: 100%;
+            height: 200px;
+
+        }
+        .box5>div{
+            width: 100px;
+            height: 100px;
+            background: #dddddd;
+            animation: move 3s linear;
+            /*animation-fill-mode: both;*/
+        }
+        @keyframes move {
+            0%{
+                background: red;
+                transform: translateX(0px) rotate(0deg);
+            }
+            50%{
+                background: blue;
+                transform: translateX(100px) rotate(180deg);
+            }
+            100%{
+                background: green;
+                transform: translateX(200px) rotate(360deg);
+            }
+
+        }
+
+        .box6{
+            width: 100%;
+            height: 200px;
+            margin: 0px auto;
+
+        }
+        .box6>div{
+            width: 200px;
+            height: 200px;
+            margin: 0px auto;
+            position: relative;
+            border: 1px solid ;
+        }
+        .box6>div>div{
+            width: 20px;
+            height: 20px;
+            border: 1px solid orange;
+            background: orange;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .box6>div>div:nth-child(1){
+            transform: translate3d(90px,10px,0px);
+        }
+        .box6>div>div:nth-child(2){
+            transform: translate3d(45px,45px,0px);
+        }
+        .box6>div>div:nth-child(3){
+            transform: translate3d(10px,90px,0px);
+        }
+        @keyframes small{
+            0%{
+                transform: scale(1,1)
+            }
+            10%{
+                transform: scale(0.9,0.9)
+            }
+            20%{
+                transform: scale(0.8,0.8)
+            }
+            30%{
+                transform: scale(0.7,0.7)
+            }
+        }
+        #loading3 {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+        .demo3 {
+            width: 4px;
+            height: 4px;
+            border-radius: 2px;
+            background: #68b2ce;
+            position: absolute;
+            animation: demo3 linear 0.8s infinite;
+            -webkit-animation: demo3 linear 0.8s infinite;
+        }
+        .demo3:nth-child(1){
+            left: 24px;
+            top: 2px;
+            animation-delay:0s;
+        }
+        .demo3:nth-child(2){
+            left: 40px;
+            top: 8px;
+            animation-delay:0.1s;
+        }
+        .demo3:nth-child(3){
+            left: 47px;
+            top: 24px;
+            animation-delay:0.1s;
+        }
+        .demo3:nth-child(4){
+            left: 40px;
+            top: 40px;
+            animation-delay:0.2s;
+        }
+        .demo3:nth-child(5){
+            left: 24px;
+            top: 47px;
+            animation-delay:0.4s;
+        }
+        .demo3:nth-child(6){
+            left: 8px;
+            top: 40px;
+            animation-delay:0.5s;
+        }
+        .demo3:nth-child(7){
+            left: 2px;
+            top: 24px;
+            animation-delay:0.6s;
+        }
+        .demo3:nth-child(8){
+            left: 8px;
+            top: 8px;
+            animation-delay:0.7s;
+        }
+
+        @keyframes demo3
+        {
+            0%,40%,100% {transform: scale(1);}
+            20% {transform: scale(3);}
+        }
+        @-webkit-keyframes demo3
+        {
+            0%,40%,100% {transform: scale(1);}
+            20% {transform: scale(3);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+<div class="box2">
+
+</div>
+
+<div class="box3">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<div class="box4">
+    <div></div>
+</div>
+
+<div class="box5">
+    <div></div>
+</div>
+
+<div class="box6">
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+    <div id="loading3">
+        <div class="demo3"></div>
+        <div class="demo3"></div>
+        <div class="demo3"></div>
+        <div class="demo3"></div>
+        <div class="demo3"></div>
+        <div class="demo3"></div>
+        <div class="demo3"></div>
+        <div class="demo3"></div>
+    </div>
+
+</body>
+</html>

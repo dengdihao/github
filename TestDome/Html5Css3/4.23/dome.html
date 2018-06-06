@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <input type="text" required placeholder="666" autofocus>
+    <lable>邮箱：</lable>
+    <input type="email" name="email">
+    <label>url:</label>
+    <input type="url" name="url">
+    <lable>年龄:</lable>
+    <input type="number" min="3" max="99" value="20" step="5">
+    <!--拾色器-->
+    <input type="color" name="color" id="color">
+    <input type="button" value="点击换颜色" id="btn">
+    <div id="div">文字颜色</div>
+    <input type="range" min="1" max="10">
+    <input type="search" spellcheck="false" value="世界很大">
+    <input type="date">
+    <input type="week">
+    <input type="month" name="month">
+    <input type="datetime">
+
+    <label>手机号码:</label><input type="text" name="phone" pattern="1[3578]{1}[0-9]{9}">
+    <input type="image" width="200" height="200" src="../../HtmlCss/img/qq.jpg">
+    <input type="submit">
+
+    <script>
+        var oCo=document.getElementById('color');
+        var oBtn=document.getElementById('btn');
+        var oDiv=document.getElementById('div');
+        oBtn.onclick=function () {
+            oDiv.style.color=oCo.value;
+        }
+    </script>
+
+    <input type="number" autofocus <!--自动获取焦点--> required <!--输入不能为空--> placeholder <!--提示-->
+    pattern <!--规定验证模式--> width height autocomplete <!--自动完成功能--> <!--form-->novalidate <!--提交表单不用验证-->>
+    <input type="email">
+    <input type="url">
+
+    <input type="text" pattern="">
+    <style>
+        input[type="text"]{}
+    </style>
+
+
+</form>
+</body>
+</html>

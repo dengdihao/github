@@ -1,0 +1,100 @@
+.font{
+    font-size: 58px;
+}
+h3{
+    font-weight: bolder; /*粗细*/
+    font-size: 24px;    /*大小*/
+    font-family: 华文行楷;/*字体*/
+    line-height: 100px;/*行高*/
+    text-align: center;/*对齐*/
+    letter-spacing: 5px;/*字符间距*/
+    text-decoration: solid; /*文本修饰*/
+    white-space: nowrap;/*空白处理*/
+}
+.box{
+    font-size: 12px;
+    line-height: 30px;
+}
+.box_li1{
+    text-decoration: underline;
+    letter-spacing: 8px;
+}
+.box_li2{
+    color: red;
+    font-size: 18px;
+}
+.bg{
+    width:500px;
+    height: 500px;
+    /*background-color: #ba2636;
+    background-image: url("../../HTML/qq登录/qq.jpg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;*/
+    background: #000 url("../../HTML/img/qq.jpg") 30px 30px no-repeat;
+}
+.bg_img1{
+    width: 251px;
+    height: 178px;
+    background: red url("../../HTML/img/yyyyy.jpg") -246px 0px no-repeat;
+}
+.nav li{
+    width: 80px;
+    font: 14px '宋体';
+    list-style: none;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #36F;
+}
+.nav li a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.nav li a:hover{
+    background: #0cf;
+}
+.nav_cz li{
+    width: 80px;
+    font: 14px '微软雅黑';
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: green;
+}
+.nav_cz li a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav_cz li a:hover{
+    background: #555;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.a a:link{
+    color: red;
+}
+.a a:visited{
+    color: yellow;
+}
+.a a:hover{
+    color: blue;
+}
+.a a:active{
+    color: green;
+}

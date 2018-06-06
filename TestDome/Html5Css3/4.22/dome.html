@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.designMode="off";
+
+       /* var oPro=document.getElementById('Pro');
+            var count=0;
+            setInterval(function () {
+                oPro.setAttribute('value',count++);
+            },100)*/
+    </script>
+    <style>
+        .C3 p:last-of-type{
+            background: red;
+        }
+        .C3:before{
+            content: '55555';
+
+        }
+        .C3:after{
+            content: '66666666666';
+        }
+        .warp{
+            width: 200px;
+            /*height: 200px;*/
+            border: 1px dashed black;
+        }
+        .warp>.left{
+            width: 100px;
+            height: 100px;
+            background: red;
+            float: left;
+        }
+        .warp>.right{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            float: right;
+        }
+        .clearfix:after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <progress value="50"max="100" id="Pro" title="这里有一个进程"></progress>
+    <p title="这里有一个段落">今天有一件很 <mark>重要的事情</mark></p>
+    <p>明天就是<time>五一</time>了</p>
+    <input list="city">
+    <datalist id="city">
+        <option value="上海"></option>
+        <option value="北京"></option>
+        <option value="武汉"></option>
+        <option value="武穴"></option>
+        <option value="上海"></option>
+    </datalist>
+
+    <!--全局属性-->
+
+    <p>这是一个段落</p>
+    <p hidden>这里有一个隐藏段落</p>
+    <p contenteditable="true" spellcheck="true">下一个段落</p>
+    <p>12313545453</p>
+    <p tabindex="3">1111</p>
+    <p tabindex="1">2222</p>
+    <p tabindex="2">3333</p>
+    <hr>
+
+    <!--CSS3高级选择器-->
+    <div class="C3">
+        <div>
+            <div>0000</div>
+            <p>111</p>
+            <p>222</p>
+            <p>333</p>
+        </div>
+        <p>444
+        </p>
+        <p>5555</p>
+        <p>6666</p>
+    </div>
+
+    <!--清除浮动-->
+    <div class="warp clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+
+    <!--<script>
+        var oPro=document.getElementById('Pro');
+        var count=0;
+        setInterval(function () {
+            oPro.setAttribute('value',count++);
+        },100)
+    </script>-->
+</body>
+</html>

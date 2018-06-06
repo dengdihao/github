@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        .test ul{list-style-type: none;  }
+        .test ul li{float:left; /*以下设置仅为方便查看效果*/ width:50px; height:20px; border:1px solid black; text-align: center;}
+        .test ul li ul{text-align: center;display: none;}
+        .test li:hover ul{ display:block;}
+    </style>
+</head>
+<body>
+<div class="test">
+    <ul>
+        <li>A
+            <ul>
+                <li>A1</li>
+                <li>A2</li>
+                <li>A3</li>
+            </ul>
+        </li>
+        <li>B
+            <ul>
+                <li>B1</li>
+                <li>B2</li>
+                <li>B3</li>
+            </ul>
+        </li>
+        <li>C
+            <ul>
+                <li>C1</li>
+                <li>C2</li>
+                <li>C3</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

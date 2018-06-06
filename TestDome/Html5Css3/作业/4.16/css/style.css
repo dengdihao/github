@@ -1,0 +1,46 @@
+*{margin: 0px; padding: 0px;}
+.clear{clear: both;}
+.right{clear: right;}
+
+/*导航栏*/
+.nav{float: right; height: 35px;width: 600px; font-size: 13px;
+    /*color: #555555;*/overflow: hidden; box-sizing: border-box; clear: left;}
+.nav ul{list-style: none; /*float: left;*/font-weight: 700;}
+.nav ul li{float: left; padding:0px 17px; line-height: 35px;clear: right;}
+.login{font-weight: normal;}
+.seting{font-weight: normal;}
+.nav ul li a{color: #555555;}
+.more{background: #398bfb;}
+.more>a{color: white !important; text-decoration: none; font-weight: normal;}
+.nav ul li a:hover{color: blue;}
+
+
+/*logo*/
+.logo{width: 100%;}
+.sonLogo{height: 100px ;width: 210px; margin: 100px auto 50px;}
+img{ box-sizing: border-box;}
+
+
+/*搜索栏*/
+.search{width: 100%;}
+.sonSearch{margin: 0px auto;width: 650px; height: 50px;}
+.sonSearch>input{ width: 540px; height: 35px; background: url(../img/icon.jpg) right center no-repeat;
+    border: 1px solid #a9a9a9;
+}
+#search-b{ width: 100px;height: 39px;float:right;background: #3385ff;color: white;text-align: center;cursor: pointer;
+    margin-top: 0px;margin-right: 8px;height: 37px;line-height: 37px;}
+
+
+/*二维码*/
+.code{width: 100%;}
+.sonCode{height: 70px ;width: 70px; margin: 20% auto 50px;text-align: center;}
+.sonCode>p{color: #666666; font-size: 14px;}
+
+/*页脚*/
+.footer{width: 100%;}
+.first{width: 400px;margin: 0 auto; }
+.first>ul{list-style: none; text-align: center;}
+.first>ul li{float: left;padding: 0px 18px;/* clear: right;*/font-size: 12px;}
+.first>ul li a{color: #999999;}
+.second{width: 550px; margin: 10px auto; font-size: 12px;}
+.second a{color: #999999;}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动与定位</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .dome div{
+            float: left;
+            width: 200px;
+            height: 100px;
+
+        }
+        .img{
+            /*overflow: auto;
+            *zoom: 1;*/
+            overflow: hidden;
+        }
+        .img div{
+            float: left;
+            width: 200px;
+
+        }
+        /*清浮动 overflow: hidden 简单粗暴*/
+        .over {
+            overflow: hidden;/*默认效果溢出隐藏*/
+        }
+        .over li{
+            float: left;
+            list-style: none;
+            margin: 20px 0px 0px 30px;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        /*清浮动（伪类）*/
+        .div{
+            width: 20px;height: 20px;background: #000000;margin-top: 50px;
+        }
+        .clearFix li{
+            float: left;
+            list-style: none;
+            margin: 20px 0px 0px 30px;
+            width: 100px;
+            height: 100px;
+            background:blue;
+        }
+        .clearFix{zoom: 1;}/*ie支持*/
+        .clearFix:after{
+            content: '.';
+            display: block;
+            visibility: hidden;
+            height: 0px;
+            clear: both;
+
+        }
+        /*浮动练习一*/
+        .exercise_1 div{
+            float: left;
+            margin: 0px 5px;
+
+        }
+    </style>
+</head>
+<body>
+<!--例子-->
+<h3>DOME</h3>
+<div class="dome">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+<div style="clear: both"></div>
+<!--<br clear="all">-->
+<!--图片排列-->
+<h3>img</h3>
+<div class="img">
+    <div>
+        <img src="img/qq.jpg" alt="" width="200">
+    </div>
+    <div>
+        <img src="img/w.jpg" alt="" width="200">
+    </div>
+    <div>
+        <img src="img/yyyy.jpg" alt="" width="200">
+    </div>
+</div>
+<!--清浮动 overflow: hidden 简单粗暴-->
+<h3>清浮动 overflow: hidden</h3>
+<ul class="over">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<ul class="over">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+</ul>
+<!--清浮动（伪类）-->
+<h3>清浮动（伪类）</h3>
+<ul class="clearFix">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4 <div class="div"></div></li>
+</ul>
+<ul class="clearFix">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+</ul>
+
+<!--浮动练习-->
+<h3>浮动练习一</h3>
+<div class="exercise_1">
+    <div><img src="img/qq.jpg" alt="" width="200px" height="200px"><span>入冬保暖靠垫</span></div>
+    <div><img src="img/qq.jpg" alt="" width="200px" height="200px"><span></span></div>
+    <div><img src="img/qq.jpg" alt="" width="200px" height="200px"></div>
+</div>
+</body>
+</html>
